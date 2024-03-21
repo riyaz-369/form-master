@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const StatefullForm = () => {
     const [name, setName] = useState(null);
     const [email, setEmail] = useState(null);
