@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 
 const RefForm = () => {
-
     const nameRef = useRef(null);
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
@@ -21,7 +20,7 @@ const RefForm = () => {
             <form onSubmit={handleSubmit}>
                 <input ref={nameRef} type="text" name="name" />
                 <br />
-                <input ref={emailRef} type="email" name="email" id="2" />
+                <input ref={emailRef} defaultValue={'example@gmail.com'} type="email" name="email" id="2" />
                 <br />
                 <input ref={passwordRef} type="password" name="password" id="" />
                 <br />
